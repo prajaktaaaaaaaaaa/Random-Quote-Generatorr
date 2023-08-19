@@ -1,0 +1,129 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+
+
+body {
+    font-family: 'poppins',sans-serif;
+    background-color:rgb(195, 177, 225); 
+    margin: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 7%;
+    
+}
+
+.container {
+    width: 700px;
+    background-color:rgb(216, 186, 186);
+    text-align:  center;
+    padding: 40px ;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.15);
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.container h1{
+    
+    font-size: 32px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    border-color: beige;
+    position: relative;
+}
+.container h1::after{
+    content:'';
+    width: 55%;
+    height: 3px;
+    border-radius: 3px;
+    background:black;
+    position: absolute;
+    bottom:-10px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.blockquote{
+    font-size: 25px;
+    min-height: 110px;
+    font-weight: 800;
+}
+ .container blockquote::before,  .container blockquote::after{
+    content: '"';
+}
+
+.container span{
+    display:block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    font-size: 15px;
+}
+
+.container span::before{
+    content:'';
+    width:18px;
+    height: 2px;
+    background: rgb(7, 7, 7);
+    position: absolute;
+    top: 12px;
+    left: -30px;
+}
+.container div{
+    width: 100%;
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+.container button{
+    background-color: rgb(195, 177, 225);
+    color: white;
+    padding: 15px 32px;
+    font-size: 15px;
+    display: flex;
+    border-radius: 25px;
+    text-align:center;
+    align-items: center;
+    width: 150px;
+    height:50px;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    cursor:pointer ;
+    border:2px solid black;
+    
+    
+   
+
+}
+
+.container button:hover{
+    cursor: pointer;
+   background-color:black;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.container button img{
+    width:20px;
+    margin-right: 10px;
+
+}
+
+
